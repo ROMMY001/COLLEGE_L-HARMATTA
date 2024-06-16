@@ -7,6 +7,150 @@
   <title>Accueil - École XYZ</title>
   <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que ce chemin est correct -->
   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  body, html {
+    height: 100%; /* Donne une hauteur de 100% à la page */
+    margin: 0; /* Enlève les marges par défaut */
+    display: flex; /* Utilise Flexbox pour le positionnement */
+    flex-direction: column; /* Organise le contenu en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+  }
+  .logo {
+    width: 100px; 
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+  main{
+    text-align: center;
+    margin-bottom: 15rem;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+  }
+  
+
+  
+  main::-webkit-scrollbar {
+    background-color: #dedede;
+    width: 0.5rem;
+  }
+  main::-webkit-scrollbar-thumb {
+    background-color: #757575;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+  
+  .nav-latteral {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: white;
+    z-index: 3;
+    height: 100vh;
+    width: max-content;
+    transition: all 0.1s ease;
+  }
+  
+  #nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: none;
+  }
+  
+  #nav-wrapper.active {
+    display: block;
+  }
+  
+  #nav-close {
+    margin-bottom: 4rem;
+  }
+  
+  .nav-links {
+    padding: 1rem 6rem 1rem 3rem;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link:hover {
+    color: lightcoral;
+  }
+  
+  .nav-link ion-icon {
+    margin-right: 15px;
+  }
+  
+  .nav-link,
+  .nav-button {
+    transition: all 0.2s ease;
+  }
+  
+  .nav-button {
+    font-size: 40px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .nav-button:hover {
+    color: orange;
+    background-color: #dedede;
+  }
+  /* Default button style */
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 20px; 
+  }
+  
+  /* Button style for screens less than 600px wide */
+  @media (max-width: 600px) {
+    .button {
+      padding: 20px 40px; /* Increase padding */
+      font-size: 24px; /* Increase font size */
+      display: block; /* Change display to block if needed */
+    }
+  }
+  
     /* Styles CSS de base */
     body {
       font-family: 'Arial', sans-serif;
