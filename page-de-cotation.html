@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - École XYZ</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que ce chemin est correct -->
+  <style>
+    /* Styles CSS de base */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+   
+    }
+    /* Styles pour les sections */
+    .section {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    /* Ajoutez ici d'autres styles spécifiques à votre site */
+  </style>
 </head>
 <body>
-    <h1>bonjour</h1>
+    <div id="nav-latteral" class="nav-latteral">
+        <div id="nav-close" class="nav-button">
+          <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="nav-links">
+          <div class="nav-link">
+            Horrair
+          </div>
+          <div class="nav-link">
+            Cours
+          </div>
+          <div class="nav-link">
+            <a href="Tablaue de bort.html">Cotes</a>
+          </div>
+          <div class="nav-link">
+              <a href="Activités.html">nouvelles-evenements</a>
+            </div>
+            <div class="nav-link">
+              <a href="Tablaue de bort.html">tableau-bord-etudiants</a>
+            </div>
+        </div>
+      </div>
+      <div id="nav-wrapper"></div>
+      <nav>
+        <div id="nav-open" class="nav-button">
+          <ion-icon name="reorder-three"></ion-icon>
+        </div>
+      </nav>
+
+<!-- Contenu principal -->
+<div id="main-content">
+  <!-- Section de gestion des paiements -->
+  <div id="gestion-paiements" class="section">
+    <h1>Gestion des paiements et de la facturation</h1>
+    <!-- Contenu de la gestion des paiements ici -->
+  </div>
+
+  <!-- Tableau de bord des étudiants -->
+  <div id="tableau-bord-etudiants" class="section">
+    <h1>Tableau de bord des étudiants</h1>
+    <!-- Contenu du tableau de bord des étudiants ici -->
+  </div>
+
+  <!-- Section des nouvelles et événements -->
+  <div id="nouvelles-evenements" class="section">
+    <h1>Nouvelles et Événements</h1>
+    <!-- Contenu des nouvelles et événements ici -->
+  </div>
+</div>
+
+<!-- Navigation latérale (deuxième code) -->
+<div id="nav-latteral" class="nav-latteral">
+  <!-- Votre navigation latérale ici -->
+</div>
+
+<!-- Scripts JavaScript -->
+<script src="scripts.js"></script> <!-- Assurez-vous que ce chemin est correct -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
+
+
